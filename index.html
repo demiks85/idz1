@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифр Цезаря</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Шифр Цезаря</h2>
+
+<!-- in tekst -->
+<label for="text">Текст:</label>
+<input type="text" id="text" placeholder="Введіть текст" oninput="validateInput(this)">
+
+<br>
+
+<!-- vvod key -->
+<label for="key">Ключ:</label>
+<input type="number" id="key" placeholder="Введіть ключ" min="1" max="30">
+
+<br>
+
+<!--буттоны -->
+<button onclick="encode()">Зашифрувати</button>
+<button onclick="decode()">Розшифрувати</button>
+<button onclick="clearFields()">Очистити</button>
+<button onclick="info()">Інфо</button>
+
+<!-- out rez -->
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
